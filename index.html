@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <img class="logo" src="./images/logo.svg" alt="logo" />
+    </div>
+    <div class="main-card">
+      <div class="wrapper1">
+        <h1 class="bill">Bill</h1>
+        <div class="bill-box">
+          <input class="price" type="number" placeholder="0" />
+          <div>
+            <img
+              class="dollar"
+              src="./images/icon-dollar.svg"
+              alt="icon-dollar"
+            />
+          </div>
+        </div>
+        <h1 class="select-tip">Select tip %</h1>
+        <div class="buttons">
+          <button class="btn" value="5">5%</button>
+          <button class="btn" value="10">10%</button>
+          <button class="btn" value="15">15%</button>
+          <button class="btn" value="25">25%</button>
+          <button class="btn" value="50">50%</button>
+          <input class="custom" type="number" placeholder="Custom" />
+        </div>
+        <h1 class="people">Number of People</h1>
+        <div class="people-box">
+          <input class="ppl" type="number" placeholder="0" />
+          <div>
+            <img
+              class="icon-person"
+              src="./images/icon-person.svg"
+              alt="icon-person"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="wrapper2">
+        <div class="bottom-container">
+          <div class="tip-amount">
+            <div class="text">
+              <h1>Tip amount</h1>
+              <h2>/ person</h2>
+            </div>
+            <div class="percentages">
+              <p id="tipAmount">$0.00</p>
+            </div>
+          </div>
+          <div class="total">
+            <div class="text">
+              <h1>Total</h1>
+              <h2>/ person</h2>
+            </div>
+            <div class="percentages">
+              <p id="tipAmountt">$0.00</p>
+            </div>
+          </div>
+          <div class="reset-button">
+            <button class="reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
